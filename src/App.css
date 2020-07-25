@@ -1,38 +1,271 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: flex;
+  width: 100%;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 10% 5px 10%;
+  background-color: #0091DC;
+  align-self: center;
+}
+.logoText{
+  font-size: 28px;
+  color: #ffffff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.content{
+  width: 75%;
+  align-self: center;
+  margin-top: 2%;
+}
+.cart-icon{
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+.cart-items{
+  background-color: white;
+  padding: 0px 6px 0px 6px;
+  border-radius: 10px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  font-size: 14px;
+}
+.header-cart{
+  position: relative;
+}
+.category-div{
+  display: inline;
+}
+.category-div button{
+  width: 100%;
+  border-width: 0px;
+  color: white;
+  background-color: #696969;
+  padding: 15px 0px 15px 0px;
+  border: 1px solid white;
+  font-family: 'Trebuchet MS';
+  font-size: 16px;
+}
+.product-image{
+  width: 100%;
+  height: 200px;
+}
+.info-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+.ind-prod-div{
+  margin-bottom: 15px;
+}
+.info-div h6{
+  font-size: 12px;
+  font-family: 'Trebuchet MS';
+  font-weight: 700;
+}
+.info-div label{
+  color: #0091DC;
+  font-size: 10px;
+  font-family: 'Trebuchet MS';
+}
+.cart-div{
+  width: 100%;
+  margin-bottom: 15px;
+}
+.cart-buttons-div{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 17px;
+}
+.cart-div button{
+  width: 100%;
+  border-width: 0px;
+  border-radius: 5px;
+  background-color: #999;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cart-div button:hover{
+  background-color: #0091DC;
+}
+.cart-img{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+.cart-product{
+  display: flex;
+  align-items: center;
+}
+.cart-title{
+  font-family: 'Trebuchet MS';
+  font-size: 18px;
+  font-weight: 600;
+}
+.cart-category{
+  font-size: 13px;
+  color: #bbb;
+  font-weight: 600;
+  text-align: left;
+}
+.cart-prod-info{
+  margin-left: 10px;
+}
+.cart-price{
+  display: flex;
+  align-items: flex-end;
+}
+.cart-price-quantity{
+  font-size: 15px;
+  color: #1E1E1E;
+  font-family: 'Trebuchet MS';
+  text-align: left;
+}
+.cart-price-h6{
+  text-align: right;
+  font-size: 32px;
+  font-family: 'Trebuchet MS';
+  color: #0091DC;
+}
+.cart-trash{
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.cart-buttons{
+  display: flex;
+  justify-content: flex-end;
+}
+.prod-view{
+  margin-bottom: 25px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+.checkout{
+  border: 0px;
+  width: 200px;
+  background-color: #696969;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 5px 0px 5px 0px;
+  font-family: 'Trebuchet MS';
+  float: right;
+  margin-top: 25px;
+}
+.checkout:hover{
+  background-color: #0091DC;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.incr-button{
+  width: 32%;
+  background-color: #999;
+  border: 0px;
+  color: white;
+  border-radius: 5px;
+  font-family: 'Trebuchet MS';
+  font-size: 20px;
+}
+.incr-button:hover{
+  background-color: #0091DC;
+  color: white;
+}
+.quan-button{
+  width: 36%;
+  font-size: 18px;
+  font-family: 'Trebuchet MS';
+}
+.add-to-cart{
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.no-checkout  h6{
+  color: #696966;
+  font-family: 'Trebuchet MS';
+  font-size: 16px;
+  text-align: center;
+  margin: 25px 0px 15px 25px;
+  line-height: 25px;
+}
+.no-checkout h6 span{
+  color: blue;
+  cursor: pointer;
+  font-weight: 700;
+}
+.back-to-listing{
+  background-color: transparent;
+  border: 0px;
+  font-family: 'Trebuchet MS';
+  color: white;
+  float: left;
+}
+.address-div{
+  padding: 15px;
+}
+.address-div input{
+  width: 95%;
+  font-size: 16px;
+  color: #1E1E1E;
+  font-family: 'Trebuchet MS';
+  border: 0px;
+  border-bottom: 1px solid #ccc;
+  margin: 15px 0px 15px 0px;
+}
+.border-div{
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.address-div-label{
+  width: 100%;
+  background-color: #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.same-as-shipping{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.same-text{
+  font-size: 12px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+}
+.address-div select{
+  width: 95%;
+  font-size: 16px;
+  color: #1E1E1E;
+  font-family: 'Trebuchet MS';
+  border: 0px;
+  border-bottom: 1px solid #ccc;
+  margin: 15px 0px 15px 0px;
+}
+.card-number-div{
+  justify-content: space-between;
+  display: flex;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+.total-amount-h6{
+  font-size: 18px;
+  font-family: 'Trebuchet MS';
+  text-align: left;
+  margin-left: 3%;
+}
+.error-input{
+  border-bottom: 1px solid red !important;
 }
